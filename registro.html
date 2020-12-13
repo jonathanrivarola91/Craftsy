@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Regitro</title>
+</head>
+
+<body>
+    <div class="master">
+        <header>
+            <a href="home.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="home.html">SMARTPHONES</a></li>
+                    <li><a href="home.html">TABLETS</a></li>
+                    <li><a href="home.html">COMPUTADORAS</a></li>
+                </ul>
+                <ul class="log">
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="registro.html">REGISTRO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="registro">
+            <div class="form">
+                <h1>Registrate</h1>
+                <form action="home.html">
+                    <div class="input">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="texto" id="nombre" placeholder="Nombre">
+                        <p>Obligatorio</p>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" class="texto" id="email" placeholder="Email">
+                        <p>Obligatorio</p>
+                    </div>
+                    <div class="input">
+                        <label for="password">Contraseña</label>
+                        <input type="password" class="texto" id="password" placeholder="Contraseña">
+                        <p>Obligatorio</p>
+                    </div>
+                    <h2>País de nacimiento</h2>
+                    <select name="" id="">
+                        <option value="ar">Argentina</option>
+                        <option value="ur">Uruguay</option>
+                        <option value="br">Brasil</option>
+                    </select>
+                    <p>Obligatorio</p>
+                    <h2>Género</h2>
+                    <div>
+                        <input type="radio" name="genero" id="genero1" value="1"><label for="genero1"> Masculino</label>
+                        <input type="radio" name="genero" id="genero2" value="2"><label for="genero2"> Femenino</label>
+                        <input type="radio" name="genero" id="genero3" value="3"><label for="genero3"> Prefiero no decirlo</label>
+                    </div>
+                    <h2>Hobbies</h2>
+                    <div>
+                        <input type="checkbox" name="check" id="check1" value="1"><label for="check1">checkbox</label>
+                        <input type="checkbox" name="check" id="check2" value="2"><label for="check2">checkbox</label>
+                        <input type="checkbox" name="check" id="check3" value="3"><label for="check3">checkbox</label>
+                        <input type="checkbox" name="check" id="check4" value="4"><label for="check4">checkbox</label>
+                    </div>
+                    <h2>Dejanos tus comentarios</h2>
+                    <div>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="checkbox" name="Terminos" id="Terminos" value="1"><label for="Terminos">Terminos y
+                        condiciones.</label>
+                    <div>
+                        <button class="enviar" type="submit">Registrarme</button>
+                        <button class="resetear" type="reset">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
